@@ -7,5 +7,13 @@ export function prefix(location, ...prefixes) {
 }
 
 export function homePage(location) {
-  return prefix(location, 'home')
+  return prefix(location, '')
+}
+
+export function reactPage(location) {
+  return prefix(location, 'react')
+}
+
+export function angularPage(location) {
+  return prefix(location, 'angular')
 }

@@ -5,11 +5,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import singleSpaReact from 'single-spa-react';
+import { BrowserRouter } from 'react-router-dom';
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: App,
+  rootComponent: () => <BrowserRouter><App /></BrowserRouter>,
   domElementGetter,
 })
 
