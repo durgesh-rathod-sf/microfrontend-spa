@@ -21,6 +21,10 @@ class App extends React.Component {
               <p className="nav-item">Angular</p>
             </Link>
           </div>
+          <div style={{border:"1px solid black"}}>
+            <div id="load-valuecockpit-reactapp"></div>
+            <div id="load-angular-pmo"></div>
+          </div>
         </div>
       </>
     );
